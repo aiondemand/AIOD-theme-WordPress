@@ -1,0 +1,37 @@
+body {
+	// background: blue;
+	font-family: $font;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+
+	// @include min-sm {
+	// 	background: yellow;
+	// }
+
+	// @include min-md {
+	// 	background: orange;
+	// }
+
+	// @include min-lg {
+	// 	background: lime;
+	// }
+
+	// @include min-xl {
+	// 	background: green;
+	// }
+
+	&.in-modal {
+		overflow: hidden;
+	}
+	
+}
+
+.grecaptcha-badge{
+	display: none !important;
+}
+
+
+.spacer {
+	padding-bottom: 60px;
+	display: block;
+}

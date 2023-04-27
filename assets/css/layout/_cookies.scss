@@ -1,0 +1,275 @@
+.cookies-wrapper{
+    background-image: linear-gradient(to bottom, rgba(42, 44, 45, 0.5), rgba(42, 44, 45, 0.5));
+    backdrop-filter: blur(4px);
+    .cookies-box{
+        box-shadow: 12px 12px 35px 0 rgba(49, 49, 49, 0.4);
+        backdrop-filter: blur(14.95px);
+        border: solid 0.5px $color-primary8;
+        border-radius: 0;
+        background-color: rgba(91, 92, 95, 0.6);
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 95px 85px;
+        max-width: 960px;
+        position: relative;
+        @include max-xl{
+            padding: 72px 32px;
+        }
+        @include max-md{
+            padding: 61px 17px 64px;
+            top: auto;
+            transform: none;
+            overflow-y: scroll;
+        }
+        .btn-close{
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            background: none;
+            opacity: 1;
+            @include max-md{
+                right: 36px;
+                top: 16px;
+            }
+            button{
+                border: none;
+                float: right;
+                padding: 10px;
+                &::before{
+                    color: $color-primary;
+                    font-size: 20px;
+                }
+                &:hover,
+                &:focus{
+                    background-color: transparent;
+                    box-shadow: none;
+                    &:before{
+                        color: $color-accent2;
+                    }
+                }
+            }
+        }
+        .cookies__title{
+            font-size: 50px;
+            letter-spacing: 5px;
+            color: $color-accent2;
+            font-family: $fontJura;
+            margin-bottom: 18px;
+            line-height: normal;
+            border: none;
+            font-weight: normal;
+            @include max-md{
+                font-size: 28px;
+                line-height: 28.7px;
+                letter-spacing: 2.8px;
+            }
+        }
+        .cookies-bar-message{
+            font-size: 16px;
+            line-height: 24.6px;
+            letter-spacing: 1.6px;
+            color: $color-primary;
+            @include max-md{
+                font-size: 11px;
+                line-height: 16.1px;
+                letter-spacing: 1.1px;
+            }
+        }
+        .cookies-settings-link{
+            button{
+                font-size: 20px;
+                line-height: 22.6px;
+                letter-spacing: 2px;
+                // border: 1px solid $color-primary;
+                // padding: 9px 30px;
+                margin: 0;
+                margin-left: auto;
+                color: $color-primary;
+                font-family: $fontJura;
+                border-radius: 0;
+                @include max-md{
+                    font-size: 14px;
+                    line-height: 15.8px;
+                    letter-spacing: 1.4px;
+                    // padding: 8px 22px;
+                    width: max-content;
+                }
+                @include max-xs{
+                    margin-left: 0;
+                }
+                &:hover,
+                &:focus{
+                    border: none;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+        }
+        #accept-cookie{
+            font-size: 20px;
+            line-height: 22.6px;
+            letter-spacing: 2px;
+            // border: 1px solid $color-primary3;
+            // padding: 20px 14px;
+            margin: 0;
+            color: $color-accent2;
+            background: transparent;
+            font-family: $fontJura;
+            border-radius: 0;
+            @include max-xl{
+                // padding: 18px 14px;
+            }
+            @include max-md{
+                font-size: 14px;
+                line-height: 15.8px;
+                letter-spacing: 1.4px;
+                // padding: 15px 14px;
+                margin-bottom: 20px;
+                width: max-content;
+            }
+            &:hover,
+            &:focus{
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+
+        .cookies-settings{
+            margin-top: 30px;
+            input[type="checkbox"]{
+                &:focus{
+                    & + label:before{
+                        box-shadow: none;
+                    }
+                }
+                &:checked + label:after{
+                    width: 15px;
+                    height: 6px;
+                    top: 10px;
+                    left: 3px;
+                    transform: rotate(-45deg);
+                    border-radius: 0 0 0 2px;
+                    border-bottom: 3px solid transparent;
+                    border-left: 3px solid transparent;
+                    border-width: 1px;
+                    border-color: $color-accent2;
+                    background-color: transparent;
+                }
+                &:checked + label::before{
+                    border-color: $color-accent2;
+                }
+            }
+            label{
+                font-size: 18px;
+                line-height: 27.7px;
+                letter-spacing: 1.8px;
+                font-family: $fontJura;
+                color: $color-primary;
+                margin-bottom: 8px;
+                @include max-md{
+                    font-size: 14px;
+                    line-height: 20.5px;
+                    letter-spacing: 1.4px;
+                }
+                &::before{
+                    border-radius: 0;
+                    background-color: transparent;
+                    border: 1px solid $color-primary8;
+                    box-shadow: none;
+                    top: 5px;
+                }
+            }
+            .cookie-info{
+                font-size: 12px;
+                line-height: 18.5px;
+                letter-spacing: 1.2px;
+                color: $color-primary8;
+                margin-bottom: 38px;
+                @include max-md{
+                    font-size: 8px;
+                    line-height: 11.7px;
+                    letter-spacing: 0.8px;
+                    margin-bottom: 20px;
+                }
+            }
+            .cookies-message{
+                font-size: 12px;
+                line-height: 18.5px;
+                letter-spacing: 1.2px;
+                color: $color-primary;
+                margin-bottom: 16px;
+                @include max-md{
+                    font-size: 9px;
+                    line-height: 13.2px;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 8px;
+                }
+                b{
+                    font-size: 20px;
+                    line-height: 30.8px;
+                    letter-spacing: 2px;
+                    color: $color-accent2;
+                    font-family: $fontJura;
+                    @include max-md{
+                        font-size: 14px;
+                        line-height: 20.5px;
+                        letter-spacing: 1.4px;
+                    }
+                }
+            }
+            #submit-preferences{
+                font-size: 18px;
+                line-height: 20.3px;
+                letter-spacing: 1.8px;
+                // border: 1px solid $color-primary3;
+                // padding: 16px 42px;
+                margin: 0;
+                color: $color-accent2;
+                background: transparent;
+                font-family: $fontJura;
+                border-radius: 0;
+                @include max-md{
+                    font-size: 14px;
+                    line-height: 15.8px;
+                    letter-spacing: 1.4px;
+                    // padding: 14px 24px;
+                    margin-bottom: 20px;
+                    width: max-content;
+                }
+                &:hover,
+                &:focus{
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+            .cookies-settings-cancel{
+                button{
+                    font-size: 20px;
+                    line-height: 22.6px;
+                    letter-spacing: 2px;
+                    // border: 1px solid $color-primary;
+                    // padding: 16px 42px;
+                    margin: 0;
+                    margin-left: auto;
+                    color: $color-primary;
+                    font-family: $fontJura;
+                    border-radius: 0;
+                    @include max-md{
+                        font-size: 14px;
+                        line-height: 15.8px;
+                        letter-spacing: 1.4px;
+                        // padding: 13px 24px;
+                        margin-bottom: 20px;
+                        width: max-content;
+                    }
+                    &:hover,
+                    &:focus{
+                        background-color: transparent;
+                        box-shadow: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.section__social {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    @include max-md {
+        position: fixed;
+    }
+    &__div{
+        position: absolute;
+        left: 74px;
+        bottom: 80px;
+        display: flex;
+        z-index: 1;
+        @include min-xl{
+            left: 98px;
+        }
+        @include max-md {
+            left: 0;
+            width: 100vw;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: $color-primary3;
+            transition: all 200ms ease;
+            .body--white &{
+                color: $color-primary5;
+            }
+            .body--home &{
+                color: $color-primary;
+            }
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+            &:hover,
+            &:focus{
+                color: $color-primary;
+                .body--white &{
+                    color: $color-default;
+                }
+                .body--home &{
+                    color: $color-primary3;
+                }
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+            &.icon-twitter,
+            &.icon-youtube{
+                &::before{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

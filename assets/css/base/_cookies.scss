@@ -1,0 +1,135 @@
+/* Barra cookies */
+
+.in-modal .cookies-wrapper {
+	overflow: auto;
+}
+
+.cookies-wrapper {
+	display: none;
+	padding: $grid-gutter-width;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+	z-index: 99999;
+	background-color: $cookiesBackground;
+	font-size: $cookiesTextBaseSize;
+	
+	* {
+		box-sizing:border-box;
+	}
+
+	button {
+		margin-bottom: 10px;
+
+		@include max-xs {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.cookies-box {
+	max-width: $cookiesBoxMaxWidth;
+	padding: $grid-gutter-width / 2 $grid-gutter-width / 2 $grid-gutter-width $grid-gutter-width / 2;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 4px;
+	background-color: $cookiesBoxBackground;
+
+	@include min-sm {
+		padding: $grid-gutter-width $grid-gutter-width $grid-gutter-width * 2 $grid-gutter-width;
+	}
+}
+
+.cookies__title {
+	display: block;
+	width: 100%;
+	margin-bottom: $grid-gutter-width;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.cookies-bar-message {
+	display: block;
+	float: left;
+	margin-bottom: $grid-gutter-width;
+    color: $cookiesTextColor;
+	font-size: 1em;
+	line-height: 20px;
+}
+
+.cookies-settings-link {
+	@include min-sm {
+		text-align: right;
+	}
+}
+
+.cookies-settings {
+	display: none;
+}
+
+.cookies-settings-cancel {
+	@include min-sm {
+		text-align: right;
+	}
+}
+
+.cookie-info {
+	display: block;
+	padding-left: $inputMarginRight + $inputWidth;
+	line-height: 16px;
+}
+
+.cookies-policy-link {
+	padding: 0 $grid-gutter-width / 2;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 0 0 4px 4px;
+	background-color: #eee;
+	text-align: center;
+
+	@include min-sm {
+		padding: 0 $grid-gutter-width + $grid-gutter-width / 2;
+	}
+}
+
+.cookies-bar-know-more {
+    color: #9a9a9a;
+	font-size: 0.85em;
+	line-height: 30px;
+	transition: color 0.2s ease;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.cookies-message {
+	p {
+		display: none;
+	}
+
+	b {
+		display: block;
+		margin-bottom: 10px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	}
+}
+
+@include max-sm {
+	
+     .cookies-bar-message{
+        height: auto;
+	}
+	
+    .cookies-bar-know-more{
+        padding-left: 0;
+    }
+}
+/* Barra cookies END */

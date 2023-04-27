@@ -1,0 +1,413 @@
+.section-news{
+    background-color: $color-primary20;
+    padding-top: 280px;
+    padding-bottom: 280px;
+    position: relative;
+    overflow: hidden;
+    &--white{
+        background-color: $color-primary;
+    }
+    
+    @include max-xl{
+        padding-top: 210px;
+        padding-bottom: 160px;
+    }
+    @include max-md{
+        padding-top: 100px;
+        padding-bottom: 180px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: normal;
+        margin-bottom: 5px;
+        color: $color-primary3;
+        font-family: $fontJura;
+        font-weight: bold;
+        @include max-xl{
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        @include max-md{
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .body--white & {
+            color: $color-primary3;
+        }
+    }
+    h2{
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: $color-primary;
+        font-family: $fontJura;
+        font-weight: normal;
+        @include max-xl{
+            font-size: 40px;
+            line-height: 44px;
+        }
+        @include max-md{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+        .body--white & {
+            color: $color-primary5;
+        }
+    }
+    &-divInfoCima{
+        margin-top: 90px;
+        margin-bottom: 110px;
+        position: relative;
+        @include max-xl{
+            margin-top: 65px;
+        }
+        @include max-md{
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+        h3{
+            font-size: 30px;
+            line-height: 39px;
+            color: $color-primary;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            margin-bottom: 2rem;
+            @include max-xl{
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+            }
+            @include max-md{
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.18px;
+            }
+            .body--white & {
+                color: $color-primary3;
+            }
+        }
+        p{
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            color: $color-primary;
+            @include max-xl{
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+            }
+            @include max-md{
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.18px;
+            }
+            .body--white & {
+                color: $color-default;
+            }
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 2rem;
+            li{
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.3px;
+                color: $color-primary;
+                margin-top: 17px;
+                @include max-xl{
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.2px;
+                }
+                @include max-md{
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.18px;
+                }
+                .body--white & {
+                    color: $color-default;
+                }
+                &:before{
+                    content: "\2022";
+                    color: $color-primary3;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+        a{
+            color: $color-primary3;
+            text-decoration: none;
+        }
+    }
+
+    .div-card-dialogues{
+		&:last-of-type{
+			.card-dialogues{
+				margin-bottom: 142px;
+				@include max-xl{
+					margin-bottom: 80px;
+				}
+				@include max-md{
+					margin-bottom: 40px;
+				}
+			}
+		}
+		.card-dialogues{
+			background-color: rgba(255, 255, 255, 0.2);
+			border-radius: 0;
+			border-bottom-left-radius: 100px;
+			border: solid 1px $color-primary15;
+			padding: 20px 42px 76px 42px;
+			transition: box-shadow 300ms linear, background-color 300ms linear, border 300ms linear;
+			height: 489px;
+			position: relative;
+			margin-bottom: 56px;
+            text-decoration: none;
+			@include max-xl{
+				padding: 11px 29px 52px 35px;
+				height: 326px;
+				border-bottom-left-radius: 60px;
+				margin-bottom: 30px;
+			}
+			@include max-md{
+				padding: 10px 26px 41px 29px;
+				height: 280px;
+				border-bottom-left-radius: 50px;
+				margin-bottom: 21px;
+			}
+			@include max-xs{
+				width: calc(100% - 50px);
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&:hover{
+				box-shadow: 5px 7px 20px 0 rgba(141, 141, 141, 0.3);
+				background-color: $color-primary16;
+				border: solid 1px transparent;
+				.icon-arrow{
+					opacity: 1;
+					&:hover{
+						font-weight: bold;
+					}
+				}
+			}
+			.div-flexHeight{
+				height: calc(100% - 20px - 76px);
+				@include max-xl{
+					height: calc(100% - 11px - 52px);
+				}
+				@include max-md{
+					height: calc(100% - 10px - 41px);
+				}
+			}
+			.card-body{
+				padding: 0;
+				.card-text{
+					border-bottom: solid 0.5px $color-primary15;
+					color: $color-primary3;
+					margin-bottom: 47px;
+					@include max-xl{
+						margin-bottom: 28px;
+					}
+					p{
+						margin-left: auto;
+						margin-bottom: 0;
+						width: max-content;
+						font-size: 14px;
+						position: relative;
+						padding-bottom: 16px;
+						letter-spacing: 0.88px;
+						text-transform: uppercase;
+						@include max-xl{
+							font-size: 12px;
+							padding-bottom: 8px;
+							letter-spacing: 0.75px;
+						}
+						@include max-md{
+							font-size: 10px;
+							letter-spacing: 0.63px;
+						}
+						&:before{
+							content: "";
+							position: absolute;
+							width: 120px;
+							bottom: -1px;
+							right: 0;
+							border-bottom: solid 0.5px $color-primary5;
+						}
+					}
+				}
+				.card-title{
+					font-size: 28px;
+					line-height: 30px;
+					letter-spacing: 1.75px;
+					color: $color-primary5;
+					font-family: $fontJura;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 4;
+					-webkit-box-orient: vertical;
+					@include max-xl{
+						font-size: 18px;
+						line-height: 20px;
+						letter-spacing: 1.13px;
+					}
+					@include max-md{
+						font-size: 16px;
+						line-height: 18px;
+						letter-spacing: 1px;
+					}
+				}
+			}
+			&-info{
+				margin-bottom: 28px;
+				@include max-xl{
+					margin-bottom: 17px;
+				}
+				@include max-md{
+					margin-bottom: 14px;
+				}
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+				p{
+					font-size: 18px;
+					line-height: normal;
+					letter-spacing: 1.13px;
+					color: $color-primary5;
+					margin-bottom: 0;
+					@include max-xl{
+						font-size: 14px;
+						letter-spacing: 0.88px;
+					}
+					@include max-md{
+						font-size: 12px;
+						letter-spacing: 0.75px;
+					}
+				}
+			}
+			.card-dialogues-type{
+				font-size: 14px;
+				line-height: normal;
+				letter-spacing: 0.88px;
+				color: $color-primary3;
+				text-transform: uppercase;
+				margin-bottom: 6px;
+				@include max-xl{
+					font-size: 12px;
+					letter-spacing: 0.75px;
+				}
+				@include max-md{
+					font-size: 10px;
+					letter-spacing: 0.63px;
+				}
+			}
+			.icon-arrow{
+				position: absolute;
+				bottom: 28px;
+				right: 43px;
+				opacity: 0;
+				transition: opacity 300ms ease-out, font-weight 300ms ease-out;
+				text-decoration: none;
+				@include max-xl{
+					bottom: 19px;
+					right: 29px;
+				}
+				@include max-md{
+					bottom: 14px;
+					right: 20px;
+					opacity: 1;
+				}
+				&:before{
+					font-size: 19px;
+					@include max-xl{
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+	.no-events{
+		display: none;
+	}
+	h2{
+		margin-top: 23px;
+		@include max-xl{
+			margin-top: 18px;
+		}
+		@include max-md{
+			margin-top: 12px;
+		}
+	}
+
+	.dialogues-filters{
+		@include max-md{
+			margin-bottom: 50px;
+		}
+		.nav-link{
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 0.25px;
+			color: $color-primary8;
+			padding: 0;
+			margin-bottom: 10px;
+			padding-left: 32px;
+			position: relative;
+			@include max-xl{
+				font-size: 18px;
+				line-height: normal;
+				line-height: normal;
+				letter-spacing: 0.23px;
+			}
+			@include max-md{
+				font-size: 16px;
+				letter-spacing: 0.2px;
+				margin-bottom: 12px;
+			}
+			&.active{
+				color: $color-primary5;
+				&:before{
+					background-image: url("../img/icon-list.svg");
+				}
+			}
+			&.withEvents{
+				&:before{
+					background-image: url("../img/icon-list-grey.svg");
+				}
+			}
+			&::before{
+				content: "";
+				position: absolute;
+				background-image: url("../img/icon-list-grey.svg");
+				background-size: 24px 24px;
+				width: 24px;
+				height: 24px;
+				left: 0;
+				top: 3px;
+			}
+		}
+	}
+}
+
+.dialogues-showMore{
+	width: 100%;
+	text-align: center;
+	a{
+		width: max-content;
+		span{
+			display: inline-block !important;
+		}
+		.icon-arrow{
+			&::before{
+				font-size: 10px;
+				transform: rotate(90deg);
+				display: inline-block;
+			}
+		}
+	}
+}

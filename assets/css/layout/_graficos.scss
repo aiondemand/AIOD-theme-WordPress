@@ -1,0 +1,262 @@
+.ball {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  left: calc(70% - 120px);
+  top: calc(50% - 220px);
+  border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 107, 0, 0) 0%, $color-primary3);
+  background-image: -o-linear-gradient(to bottom, rgba(255, 107, 0, 0) 0%, $color-primary3);
+  background-image: linear-gradient(to bottom, rgba(255, 107, 0, 0) 0%, $color-primary3);
+  background-size: 300% 300%;
+  -webkit-animation: GradientBottom 50s ease infinite;
+  -moz-animation: GradientBottom 50s ease infinite;
+  animation: GradientBottom 50s ease infinite;
+  filter: blur(23px);
+  -webkit-filter: blur(23px);
+  -moz-filter: blur(23px);
+  // transition: background-position 0.4s, border-radius 2s ease-in-out, transform 1s, opacity 2s;
+}
+
+@-webkit-keyframes GradientBottom {
+  0% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 25%;
+    // border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    left : 80%;
+    top: 50%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 75%;
+    // border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}
+  
+@-moz-keyframes GradientBottom {
+  0% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 25%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    left : 80%;
+    top: 50%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 75%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}
+  
+@keyframes GradientBottom {
+  0% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 25%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    left : 80%;
+    top: 50%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    top: 75%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}
+
+
+.ball1 {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: calc(70% - 120px);
+  bottom: calc(50% - 220px);
+  border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  background-image: -webkit-linear-gradient(to bottom, $color-primary3 0%, rgba(255, 107, 0, 0));
+  background-image: -o-linear-gradient(to bottom, $color-primary3 0%, rgba(255, 107, 0, 0));
+  background-image: linear-gradient(to bottom, $color-primary3 0%, rgba(255, 107, 0, 0));
+  background-size: 300% 300%;
+  -webkit-animation: GradientTop 50s ease infinite;
+  -moz-animation: GradientTop 50s ease infinite;
+  animation: GradientTop 50s ease infinite;
+  filter: blur(23px);
+  -webkit-filter: blur(23px);
+  -moz-filter: blur(23px);
+  // transition: background-position 0.4s, border-radius 2s ease-in-out, transform 1s, opacity 2s;
+}
+
+@-webkit-keyframes GradientTop {
+  0% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 40%;
+    bottom: 15%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    right : 55%;
+    bottom: 35%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 70%;
+    bottom: 25%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}
+
+@-moz-keyframes GradientTop { 
+  0% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 40%;
+    bottom: 15%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    right : 55%;
+    bottom: 35%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 70%;
+    bottom: 25%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}
+
+@keyframes GradientTop {
+  0% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+  25% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 40%;
+    bottom: 15%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+    right : 55%;
+    bottom: 35%;
+    transform: rotate(130deg);
+    border-radius: 77% 84% 74% 86% / 70% 74% 86% 90%;
+  }
+  75% {
+    background-position: 65% 50%;
+    transform: rotate(90deg);
+    right: 70%;
+    bottom: 25%;
+    border-radius: 57% 64% 54% 66% / 50% 54% 66% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+    right: 20%;
+    bottom: 0;
+    transform: rotate(0deg);
+    border-radius: 46% 54% 44% 56% / 40% 44% 56% 60%;
+  }
+}

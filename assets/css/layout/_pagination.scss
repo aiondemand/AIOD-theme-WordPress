@@ -1,0 +1,62 @@
+.navigation {
+    &.pagination {
+        display: flex;
+        width: 100%;
+        padding: 30px 0;
+        h2 {
+            position: absolute;
+            top: -9999px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            width: 100%
+        }
+        span,
+        a{
+            text-decoration: none;
+            transition: color 200ms ease;
+            &.page-numbers {
+                min-width: 30px;
+                padding: 5px;
+                text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 18px;
+                line-height: 30px;
+                color: $color-primary10;
+                &.current {
+                    color: $color-primary3;
+                }
+                @include max-md{
+                    font-size: 12px;
+                    letter-spacing: 0.72px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    min-width: 20px;
+                    line-height: 20px;
+                    padding: 3px;
+                }
+            }
+        }
+        a{
+            &:hover,
+            &:active{
+                &.page-numbers {
+                    color: $color-primary3;
+                }
+            }
+        }
+        
+        .prev{
+            &.page-numbers{
+                .icon-arrow{
+                    &:before{
+                        transform: rotate(180deg);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

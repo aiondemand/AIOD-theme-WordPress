@@ -1,0 +1,24 @@
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	color: $font-heading-color;
+	font-family: $font-variant;
+}
+
+@font-face {
+    font-family: 'AndaleMono-Bold';
+    src: url('../fonts/ANDALEMONOMTSTD-BOLD.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.is-uppercase{
+    text-transform: uppercase;
+}
+
+
+  

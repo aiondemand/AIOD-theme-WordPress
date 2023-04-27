@@ -1,0 +1,57 @@
+.section-resultsDetails{
+	overflow: hidden;
+	padding-bottom: 250px;
+	@include max-xl{
+		padding-bottom: 170px;
+	}
+	h3{
+		color: $color-primary;
+        span{
+        	color: $color-default4;
+        }
+        
+        .body--white & {
+            color: $color-primary3;
+	        span{
+	        	color: $color-primary5;
+	        }
+        }
+    }
+
+    .p-organization {
+    	margin-top: 24px;
+    	margin-bottom: 0;
+    	font-size: 35px;
+    	line-height: 45px;
+    	color: $color-primary11;
+    	@include max-md{
+			margin-top: 0;
+		}
+    }
+    .p-organization-info {
+    	font-size: 18px;
+    	line-height: 25px;
+    	color: $color-primary5;
+    }
+	.div-text {
+		margin-bottom: 45px;
+		@include max-md{
+			margin-bottom: 90px;
+		}
+		h3 {
+			color: inherit;
+			margin-bottom: 1rem;
+			font-size: 18px;
+			&:not(:first-child){
+				margin-top: 45px;
+			}
+		}
+	}
+	.btn-type{
+        span{
+            &::before{
+                color: $color-primary5;
+            }
+        }
+    }
+}

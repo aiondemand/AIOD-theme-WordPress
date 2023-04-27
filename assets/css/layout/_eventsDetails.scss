@@ -1,0 +1,261 @@
+.section-eventsDetails{
+	overflow: hidden;
+	padding-bottom: 250px;
+	@include max-xl{
+		padding-bottom: 170px;
+	}
+	h3{
+		color: $color-primary;
+		span{
+			color: $color-default4;
+		}
+		
+		.body--white & {
+			color: $color-primary3;
+			span{
+				color: $color-primary5;
+			}
+		}
+	}
+
+	.p-organization {
+		margin-top: 24px;
+		margin-bottom: 0;
+		font-size: 35px;
+		line-height: 45px;
+		color: $color-primary11;
+	}
+	.p-organization-info {
+		font-size: 18px;
+		line-height: 25px;
+		color: $color-primary5;
+	}
+	.div-text {
+		margin-bottom: 45px;
+		h3 {
+			color: inherit;
+			margin-bottom: 1rem;
+			&:not(:first-child){
+				margin-top: 45px;
+			}
+		}
+	}
+	.btn-type{
+		span{
+			&::before{
+				color: $color-primary5;
+			}
+		}
+	}
+}
+.section-eventDetail{
+	position: relative;
+	overflow: hidden;
+	&-question{
+		border: 1px solid $color-primary15;
+		padding: 22px 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 53px;
+		position: relative;
+		@include max-xl{
+			padding: 18px 25px;
+			margin-top: 40px;
+		}
+		@include max-md{
+			padding: 32px 27px;
+		}
+		@include max-sm{
+			flex-direction: column;
+		}
+		p{
+			font-size: 20px;
+			line-height: normal;
+			font-weight: bold;
+			color: $color-primary3;
+			margin: 0;
+			@include max-xl{
+				font-size: 16px;
+			}
+			@include max-sm{
+				margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+		button{
+			margin-left: auto !important;
+			margin-right: 0 !important;
+			background-color: $color-primary5;
+			@include max-sm{
+				margin-right: auto !important;
+			}
+			&:hover {
+				background-color: $color-primary3;
+			}
+			span {
+				font-size: 10px;
+			}
+		}
+	}
+	&-form{
+		margin-top: 124px;
+		position: relative;
+		@include max-xl{
+			margin-top: 84px;
+		}
+		@include max-md{
+			margin-top: 40px;
+		}
+		.section-newsletters-container-form{
+			padding: 106px 114px;
+			position: relative;
+			background-color: $color-accent5;
+			@include max-xl{
+				padding: 63px 72px 76px 72px;
+			}
+			@include max-md{
+				padding: 62px 40px 60px 20px;
+			}
+
+			.form-group{
+				margin-bottom: 63px;
+				@include max-xl{
+					margin-bottom: 52px;
+				}
+				@include max-md{
+					margin-bottom: 30px;
+				}
+			}
+			label {
+				color: $color-primary;
+				margin-left: 20px;
+				@include max-xl{
+                    margin-left: 14px;
+                }
+                &.error {
+                	margin-left: 0;
+                	left: 0;
+                	padding-left: 20px;
+                	color: $color-primary;
+                	width: 100%;
+                }
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+            	& + label {
+            		&.error {
+	                	&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							height: 18px;
+							width: 18px;
+							right: 10px;
+							bottom: 35px;
+							background: url('../img/icon-error.svg') center no-repeat;
+							background-size: cover;
+						}
+					}
+                }
+			}
+			.line-before{
+				input.valid + div,
+				div{
+					&::before{
+						border-bottom: 1px solid $color-primary19;
+						transition: all 200ms ease;
+					}
+				}
+				input:focus + div,
+				input:focus + label + div{
+					&::before{
+						border-color: $color-primary;
+					}
+				}
+				input.error + label + div,
+				input.error:focus + div{
+					&::before{
+						border-color: $color-primary;
+					}
+				}
+			}
+			textarea,
+			input{
+				border-left: 1px solid $color-primary19;
+				margin-left: 0;
+				color: $color-default6 !important;
+				&:focus,
+				&:active{
+					border-color: $color-primary;
+					color: $color-primary !important;
+				}
+				&.error,
+				&.error:focus{
+					border-color: $color-primary;
+				}
+				&[type="checkbox"]{
+					&:checked{
+						& + label{
+							&::after,
+							&::before{
+								border-color: $color-primary19;
+							}
+						}
+						+ label.form-check-label,
+						+ label + label.form-check-label{
+							&::after,
+							&:before{
+								border-color: $color-primary;
+							}
+						}
+					}
+					+ label.form-check-label,
+					+ label + label.form-check-label{
+						margin-left: 0;
+						color: $color-primary;
+						padding-left: 50px;
+						a{
+							color: #d2d2d2;
+							&:hover{
+								color: #d2d2d2;
+							}
+						}
+						&:before{
+							border-color: $color-primary;
+						}
+					}
+				}
+			}
+			input:-webkit-autofill,
+			input:-webkit-autofill:hover, 
+			input:-webkit-autofill:focus,
+			textarea:-webkit-autofill,
+			textarea:-webkit-autofill:hover,
+			textarea:-webkit-autofill:focus{
+				-webkit-text-fill-color: #d2d2d2;
+				caret-color: #d2d2d2;
+			}
+			button{
+				margin-right: auto;
+			}
+		}
+		&-title{
+			font-size: 30px;
+			line-height: normal;
+			font-weight: normal;
+			color: $color-primary;
+			margin-bottom: 60px;
+			text-align: center;
+			@include max-xl{
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+			@include max-md{
+				margin-bottom: 60px;
+				font-size: 20px;
+			}
+		}
+	}
+}

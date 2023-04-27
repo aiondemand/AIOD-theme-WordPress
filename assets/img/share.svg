@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>share</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.164706 0 0 0 0 0.172549 0 0 0 0 0.176471 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Stylesheet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="00.-Stylesheet" transform="translate(-1830.000000, -394.000000)">
+            <g id="share-2-(1)-copy-2" transform="translate(1831.000000, 395.000000)" filter="url(#filter-1)">
+                <g>
+                    <circle id="Oval" stroke="#133293" stroke-width="2" cx="15" cy="3" r="3"></circle>
+                    <circle id="Oval" stroke="#133293" stroke-width="2" cx="3" cy="10" r="3"></circle>
+                    <circle id="Oval" stroke="#133293" stroke-width="2" cx="15" cy="17" r="3"></circle>
+                    <line x1="5.59" y1="11.51" x2="12.42" y2="15.49" id="Path" stroke="#133293" stroke-width="2"></line>
+                    <line x1="12.41" y1="4.51" x2="5.59" y2="8.49" id="Path" stroke="#133293" stroke-width="2"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

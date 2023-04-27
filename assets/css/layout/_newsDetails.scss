@@ -1,0 +1,130 @@
+.section-news{
+	overflow: hidden;
+	padding-bottom: 250px;
+	@include max-xl{
+		padding-bottom: 170px;
+	}
+	h3{
+		color: $color-primary;
+        span{
+        	color: $color-default4;
+        }
+        
+        .body--white & {
+            color: $color-primary3;
+	        span{
+	        	color: $color-primary5;
+	        }
+        }
+    }
+
+    &-imgBanner{
+        width: 100%;
+        max-height: 730px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 80px;
+        @include max-xl{
+            max-height: 460px;
+        }
+        @include max-md{
+            max-height: 400px;
+            margin-bottom: 40px;
+        }
+        @include max-sm{
+            max-height: 200px;
+        }
+    }
+
+    .p-organization {
+    	margin-top: 24px;
+    	margin-bottom: 0;
+    	font-size: 35px;
+    	line-height: 45px;
+    	color: $color-primary11;
+    }
+    .p-organization-info {
+    	font-size: 18px;
+    	line-height: 25px;
+    	color: $color-primary5;
+    }
+	.div-text {
+		margin-bottom: 45px;
+		h3 {
+			color: inherit;
+			margin-bottom: 1rem;
+			&:not(:first-child){
+				margin-top: 45px;
+			}
+		}
+	}
+	.btn-type{
+        span{
+            &::before{
+                color: $color-primary5;
+            }
+        }
+    }
+    .dialogues-carousel{
+		margin-bottom: 60px;
+		@include max-xl{
+			margin-bottom: 35px;
+		}
+		@include max-md{
+			margin-bottom: 21px;
+		}
+		.carousel-item{
+			img{
+				height: 575px;
+				object-fit: contain;
+				@include max-xl{
+					height: 410px;
+				}
+				@include max-md{
+					height: 400px;
+				}
+				@include max-sm{
+					height: 200px;
+				}
+			}
+		}
+		.carousel-control-prev, .carousel-control-next{
+			position: initial;
+			opacity: 1;
+			width: 15px;
+			margin-top: 25px;    
+			margin-left: 23px;
+			margin-right: 23px;
+			color: $color-primary3;
+			@include max-xl{
+				margin-top: 16px;
+			}
+			@include max-md{
+				margin-top: 14px;
+				margin-left: 6px;
+				margin-right: 6px;
+			}
+			&:hover {
+				color: $color-primary5;
+			}
+		}
+		.carousel-control-prev{
+			span{
+				&::before{
+					display: block;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
+.post-navigation {
+	padding: 10px 0;
+	.has-text-right {
+		text-align: right;
+	}
+	.link-icon-foward {
+		transform: rotate(180deg);
+		transform-origin: center;
+	}
+}

@@ -1,0 +1,61 @@
+//Bootstrap Functions
+// ===== OVERIDE VARIABLES BOOTSTRAP ===== //
+//@import "node_modules/bootstrap/scss/functions"; 
+
+@import "base/variables";
+//@import "bootstrap/bootstrap-override";
+@import "bootstrap/bootstrap"; // bootstrap framework
+
+@import "base/mixins";
+@import "base/stylesheet";
+@import "base/icons";
+@import "base/fonts";
+@import "base/base";
+@import "base/inputs";
+@import "base/select";
+@import "base/file";
+@import "base/forms";
+@import "base/warnings";
+@import "base/buttons";
+@import "base/cookies";
+
+// ===== REUSABLE BLOCKS OF CODE ===== //
+// @import "modules/swiper";
+
+// ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== //
+
+// @import "layout/viewname";
+@import "layout/keyframes";
+@import "layout/loba";
+@import "layout/header";
+@import "layout/index";
+@import "layout/newsletters";
+@import "layout/visionAndGoals";
+@import "layout/workPlan";
+@import "layout/targetGroups";
+@import "layout/consortium";
+@import "layout/results";
+@import "layout/resultsDetails";
+@import "layout/news";
+@import "layout/newsDetails";
+@import "layout/events";
+@import "layout/eventsDetails";
+@import "layout/contactUs";
+@import "layout/privacyPolicy";
+@import "layout/search";
+@import "layout/social";
+@import "layout/pagination";
+
+@import "layout/cookies";
+@import "layout/graficos";
+@import "layout/error";
+@import "layout/footer";
+
+
+// ===== DEBUG HTML/CSS ===== //
+@import "layout/debug";
+
+
+// PACKAGES
+@import "node_modules/tiny-slider/src/tiny-slider.scss";
+//@import "../../node_modules/aos/src/sass/aos.scss";
